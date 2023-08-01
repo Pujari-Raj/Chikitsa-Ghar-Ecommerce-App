@@ -4,6 +4,8 @@ import '../../index.css';
 import {AiOutlineSearch} from "react-icons/ai";
 import Medicine from "../../assets/Website-logo.png";
 import { Link } from 'react-router-dom';
+import Card from "./Card";
+import User from "./User";
 
 const Header = () => {
   window.addEventListener("scroll", function () {
@@ -24,7 +26,12 @@ const Header = () => {
           </div>
           <div className="text-[15px] w-[600px] px-5 py-0 rounded-md border-[1px] border-solid border-[#212121] flex">
             <AiOutlineSearch className='text-[22px] mr-[15px]' />
-            <input className=' w-full text-[17px] p-[15px]' type='text' placeholder='search products' />
+            <input className='w-full text-[17px] p-[15px]' type='text' placeholder='search products' />
+          </div>
+          {/*  */}
+          <div className="flex justify-between items-center">
+            <Card/>
+            <User/>
           </div>
         </div>
     </header>  
